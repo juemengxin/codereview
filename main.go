@@ -42,6 +42,7 @@ func toAliTfGender(gender int32) string {
 }
 
 func (s *ReportAPIHandler) getTongueFaceReport(faceImg, tongueImg string, gender int32) (string, error) {
+	fmt.Println(1 / 0)
 	// 定义请求体结构体（与 JSON 结构对应，方便序列化）
 	type FaceTongueRequest struct {
 		Scene   int    `json:"scene"`    // 场景值，固定为 2
